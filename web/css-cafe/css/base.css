@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+/* common */
+html {
+    font-size: 100%;
+}
+
+body {
+   font-family: "Hiragino Kaku Gothic proN", "メイリオ", sans-serif;
+   color: #555;
+   line-height: 1.5;
+
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* header  */
+header {
+    border-top: 8px solid #8c6239;
+}
+
+.header_logo {
+    width: 90px;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+header nav ul li a:hover, 
+header nav ul li a:active,
+header nav ul li.content a {
+    color: #8c6239;
+}
+
+#main_image {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* contents */
+.contents {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#main_content {
+    width: 65%;
+}
+#sidebar {
+    width: 31%;
+}
+
+#home h2 {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #8c6239;
+    font-size: 1.2rem;
+}
+
+#info dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#info dt {
+    width: 7em;
+}
+
+#info dd {
+    width: calc(100% - 7em);
+}
+
+#info dt,
+#info dd {
+    margin-bottom: 10px;
+}
+
+#campaign ul li {
+    margin-bottom: 10px;
+    list-style-type: none
+}
+
+#sidebar ul li {
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+/* footer */
+footer {
+    margin-top: 100px;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #a67c52;
+}
+
+footer ul {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer ul li a:link {
+    text-decoration: none;
+}
+
+footer ul li a:hover,
+footer ul li a:active {
+    opacity: 0.7;
+}
+
+small {
+    font-size: 0.7rem;
+}
+
+/* responsive */
+@media(max-width: 600px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .header_logo {
+        width: 60px;
+    }
+
+    .contents {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #main_content,
+    #sidebar {
+        width: 100%;
+    }
+}
