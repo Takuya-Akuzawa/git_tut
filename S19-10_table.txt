@@ -1,0 +1,16 @@
+-- $ mysql -u root < initialize.sql
+-- $mysql -u mydebuser -p 
+use mydb;
+
+create table users ( id int unsigned,
+ name varchar(32),
+ age int );
+
+show tables;
+
+--テーブルの構造を確認
+desc users;
+
+
+drop table users;
+exit;
